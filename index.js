@@ -30,7 +30,7 @@ async function run() {
     app.get("/projects/:id", async (req, res) => {
       const id = req.params.id;
       const query = { _id: ObjectId(id) };
-      // nothing changha
+      // Every thing is change
       const result = await projectCollection.findOne(query);
       res.send(result);
     });
